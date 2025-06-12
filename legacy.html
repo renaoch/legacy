@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Ajit Chetri — Senior Ultra Fullstack Dev | Award-Winning Web Architect
+    </title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Butcherman&family=Chela+One&display=swap");
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+      /* Professional CSS that slowly reveals its chaos */
+      .professional-wrapper {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(45deg, #1a1a1a, #2d2d2d, #1a1a1a, #0a0a0a);
+        background-size: 400% 400%;
+        animation: haunted-gradient 10s ease infinite;
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes haunted-gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .floating-terror {
+        position: fixed;
+        z-index: 9999;
+        animation: float-around 15s linear infinite;
+        font-family: "Creepster", cursive;
+        color: #ff0000;
+        font-size: 20px;
+        text-shadow: 0 0 10px #ff0000;
+        pointer-events: none;
+      }
+
+      @keyframes float-around {
+        0% {
+          top: 10%;
+          left: 10%;
+          transform: rotate(0deg);
+        }
+        25% {
+          top: 80%;
+          left: 20%;
+          transform: rotate(90deg);
+        }
+        50% {
+          top: 70%;
+          left: 90%;
+          transform: rotate(180deg);
+        }
+        75% {
+          top: 20%;
+          left: 80%;
+          transform: rotate(270deg);
+        }
+        100% {
+          top: 10%;
+          left: 10%;
+          transform: rotate(360deg);
+        }
+      }
+
+      .glitch-text {
+        animation: glitch 2s infinite;
+        position: relative;
+      }
+
+      @keyframes glitch {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-2px, 2px);
+        }
+        40% {
+          transform: translate(-2px, -2px);
+        }
+        60% {
+          transform: translate(2px, 2px);
+        }
+        80% {
+          transform: translate(2px, -2px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      .table-master {
+        border-collapse: separate;
+        border-spacing: 3px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+      }
+
+      .cursed-nav {
+        background: linear-gradient(90deg, #4a0080, #000080, #800080);
+        animation: color-shift 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes color-shift {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+
+      .professional-button {
+        background: linear-gradient(45deg, #00ff00, #ff00ff, #ffff00, #00ffff);
+        background-size: 300% 300%;
+        animation: rainbow-button 2s linear infinite;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: "Chela One", cursive;
+      }
+
+      @keyframes rainbow-button {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .haunted-skill {
+        transition: all 0.3s ease;
+      }
+
+      .haunted-skill:hover {
+        transform: scale(1.1) rotate(5deg);
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000;
+        filter: drop-shadow(0 0 5px #ff0000);
+      }
+
+      .matrix-rain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0.1;
+        background: repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 2px,
+          #00ff00 2px,
+          #00ff00 4px
+        );
+        animation: matrix-scroll 5s linear infinite;
+      }
+
+      @keyframes matrix-scroll {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="professional-wrapper">
+    <!-- Floating chaos elements -->
+    <div class="floating-terror">
+      <i class="fas fa-skull"></i> TABLES EVERYWHERE
+      <i class="fas fa-skull"></i>
+    </div>
+    <div class="floating-terror" style="animation-delay: -5s">
+      <i class="fas fa-fire"></i> NO FRAMEWORKS <i class="fas fa-fire"></i>
+    </div>
+    <div class="floating-terror" style="animation-delay: -10s">
+      <i class="fas fa-ghost"></i> PURE HTML POWER <i class="fas fa-ghost"></i>
+    </div>
+
+    <!-- Matrix background -->
+    <div class="matrix-rain"></div>
+
+    <!-- Main container table (because why use divs?) -->
+    <table
+      width="100%"
+      height="100vh"
+      class="table-master"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+    >
+      <tr>
+        <!-- Header row -->
+        <td
+          colspan="2"
+          height="150"
+          style="
+            background: linear-gradient(45deg, #000 0%, #333 50%, #000 100%);
+            text-align: center;
+            padding: 20px;
+          "
+        >
+          <table width="100%" border="0">
+            <tr>
+              <td>
+                <font
+                  size="8"
+                  face="Nosifer, cursive"
+                  color="#00ffff"
+                  class="glitch-text"
+                >
+                  <b
+                    ><i class="fas fa-bolt"></i> AJIT CHETRI
+                    <i class="fas fa-bolt"></i
+                  ></b>
+                </font>
+                <br />
+                <font size="4" face="Butcherman, cursive" color="#ffff00">
+                  "Tables are the backbone of the internet. CSS Grid is for
+                  weaklings."
+                </font>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <!-- Navigation sidebar -->
+        <td width="250" valign="top" class="cursed-nav" style="padding: 20px">
+          <table
+            width="100%"
+            border="2"
+            cellpadding="10"
+            style="border-color: #ff00ff"
+          >
+            <tr>
+              <td style="background: #1a1a2e; text-align: center">
+                <font color="#00ff00" size="4" face="Impact"
+                  ><b><i class="fas fa-map"></i> NAVIGATION</b></font
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="background: #16213e">
+                <table width="100%" border="0">
+                  <tr>
+                    <td>
+                      <a
+                        href="#about"
+                        style="
+                          color: #00ffff;
+                          text-decoration: none;
+                          font-family: monospace;
+                        "
+                        ><i class="fas fa-user"></i> About Me</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#projects"
+                        style="
+                          color: #ff00ff;
+                          text-decoration: none;
+                          font-family: monospace;
+                        "
+                        ><i class="fas fa-rocket"></i> Projects</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#skills"
+                        style="
+                          color: #ffff00;
+                          text-decoration: none;
+                          font-family: monospace;
+                        "
+                        ><i class="fas fa-dumbbell"></i> Skills</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="#contact"
+                        style="
+                          color: #00ff00;
+                          text-decoration: none;
+                          font-family: monospace;
+                        "
+                        ><i class="fas fa-phone"></i> Contact</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="background: #0f3460; text-align: center; padding: 15px"
+              >
+                <marquee direction="up" scrollamount="3" height="100">
+                  <font color="#ff0000" size="2">
+                    <b><i class="fas fa-fire"></i> HOT TIP:</b><br />
+                    Use nested tables for responsive design!<br /><br />
+                    <b><i class="fas fa-lightbulb"></i> PRO TIP:</b><br />
+                    &lt;blink&gt; is coming back!<br /><br />
+                    <b><i class="fas fa-zap"></i> EXPERT TIP:</b><br />
+                    Inline styles are faster than CSS!
+                  </font>
+                </marquee>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- Main content area -->
+        <td
+          valign="top"
+          style="
+            padding: 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+          "
+        >
+          <!-- About section -->
+          <a name="about"></a>
+          <table
+            width="100%"
+            border="3"
+            cellpadding="15"
+            style="border-color: #ff0000; background: #000; margin-bottom: 20px"
+          >
+            <tr>
+              <td
+                colspan="2"
+                style="
+                  text-align: center;
+                  background: linear-gradient(
+                    90deg,
+                    #ff0000,
+                    #00ff00,
+                    #0000ff,
+                    #ff0000
+                  );
+                "
+              >
+                <font
+                  size="6"
+                  face="Creepster, cursive"
+                  color="#000"
+                  class="glitch-text"
+                >
+                  <b
+                    ><i class="fas fa-theater-masks"></i> WHO AM I?
+                    <i class="fas fa-theater-masks"></i
+                  ></b>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td width="40%" style="text-align: center">
+                <img
+                  src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"
+                  width="200"
+                  height="200"
+                  style="
+                    border: 5px solid #00ff00;
+                    border-radius: 50%;
+                    filter: sepia(100%) hue-rotate(120deg);
+                  "
+                />
+              </td>
+              <td style="background: #111">
+                <font face="Courier New, monospace" color="#00ff00" size="3">
+                  Greetings, mortal developers! I am
+                  <span class="glitch-text">Ajit Chetri</span>, the legendary
+                  <b style="color: #ff00ff"
+                    >Ultra-Senior Full-Stack Table Architect</b
+                  >. <br /><br />
+                  I don't just write code - I
+                  <i>conduct symphonies of nested tables</i>. While others
+                  struggle with modern frameworks, I craft digital masterpieces
+                  using <b style="color: #ffff00">pure HTML artistry</b>.
+                  <br /><br />
+                  My code doesn't just work - it
+                  <blink style="color: #ff0000">transcends reality</blink>.
+                </font>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Projects section -->
+          <a name="projects"></a>
+          <table
+            width="100%"
+            border="4"
+            cellpadding="10"
+            style="
+              border-color: #00ff00;
+              background: #1a1a1a;
+              margin-bottom: 20px;
+            "
+          >
+            <tr>
+              <td
+                colspan="2"
+                style="
+                  text-align: center;
+                  background: radial-gradient(circle, #ff00ff, #000080);
+                "
+              >
+                <font size="5" face="Butcherman, cursive" color="#00ffff">
+                  <b
+                    ><i class="fas fa-trophy"></i> LEGENDARY PROJECTS
+                    <i class="fas fa-trophy"></i
+                  ></b>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td width="50%" style="background: #2d2d2d; padding: 15px">
+                <table width="100%" border="2" style="border-color: #ffff00">
+                  <tr>
+                    <td style="background: #ff6b6b; text-align: center">
+                      <font color="#000" size="4" face="Impact">
+                        <b
+                          ><i class="fas fa-star"></i> Table-Based Social
+                          Network</b
+                        >
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background: #4ecdc4; padding: 10px">
+                      <font face="Comic Sans MS" color="#000" size="2">
+                        A revolutionary social platform built entirely with
+                        nested tables. Features include: table-based messaging,
+                        table-driven notifications, and a table-rendered news
+                        feed. No JavaScript required!
+                      </font>
+                      <br /><br />
+                      <div
+                        style="
+                          background: #000;
+                          color: #00ff00;
+                          padding: 5px;
+                          font-family: monospace;
+                        "
+                      >
+                        Status: <i class="fas fa-chart-bar"></i> 80% Complete
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="50%" style="background: #2d2d2d; padding: 15px">
+                <table width="100%" border="2" style="border-color: #ff00ff">
+                  <tr>
+                    <td style="background: #ff9ff3; text-align: center">
+                      <font color="#000" size="4" face="Impact">
+                        <b
+                          ><i class="fas fa-gamepad"></i> HTML-Only Game
+                          Engine</b
+                        >
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background: #54a0ff; padding: 10px">
+                      <font face="Times New Roman" color="#fff" size="2">
+                        Revolutionary gaming platform using only HTML tables for
+                        graphics. Each pixel is a table cell. Supports 256-color
+                        graphics and stereo sound via multiple &lt;bgsound&gt;
+                        tags.
+                      </font>
+                      <br /><br />
+                      <div
+                        style="
+                          background: #000;
+                          color: #ff0000;
+                          padding: 5px;
+                          font-family: monospace;
+                        "
+                      >
+                        Status: <i class="fas fa-chart-line"></i> 60% Complete
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Skills section -->
+          <a name="skills"></a>
+          <table
+            width="100%"
+            border="5"
+            cellpadding="20"
+            style="border-color: #ffff00; background: #000; margin-bottom: 20px"
+          >
+            <tr>
+              <td
+                style="
+                  text-align: center;
+                  background: linear-gradient(
+                    45deg,
+                    #ee5a24,
+                    #feca57,
+                    #ff9ff3,
+                    #54a0ff
+                  );
+                "
+              >
+                <font size="5" face="Chela One, cursive" color="#000">
+                  <b
+                    ><i class="fas fa-sword"></i> LEGENDARY SKILLS
+                    <i class="fas fa-sword"></i
+                  ></b>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="10">
+                  <tr>
+                    <td
+                      width="33%"
+                      class="haunted-skill"
+                      style="
+                        background: #ff6b6b;
+                        text-align: center;
+                        border: 2px solid #000;
+                      "
+                    >
+                      <font face="Impact" color="#000" size="3">
+                        <b
+                          ><i class="fas fa-building"></i> HTML Table
+                          Architecture</b
+                        ><br />
+                        <font size="2">Master of nested table layouts</font>
+                      </font>
+                    </td>
+                    <td
+                      width="33%"
+                      class="haunted-skill"
+                      style="
+                        background: #4ecdc4;
+                        text-align: center;
+                        border: 2px solid #000;
+                      "
+                    >
+                      <font face="Impact" color="#000" size="3">
+                        <b><i class="fas fa-palette"></i> Inline CSS Artistry</b
+                        ><br />
+                        <font size="2"
+                          >External stylesheets are for weaklings</font
+                        >
+                      </font>
+                    </td>
+                    <td
+                      width="33%"
+                      class="haunted-skill"
+                      style="
+                        background: #45b7d1;
+                        text-align: center;
+                        border: 2px solid #000;
+                      "
+                    >
+                      <font face="Impact" color="#000" size="3">
+                        <b><i class="fas fa-fire"></i> Raw HTML Power</b><br />
+                        <font size="2">No frameworks, no problem</font>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="haunted-skill"
+                      style="
+                        background: #f9ca24;
+                        text-align: center;
+                        border: 2px solid #000;
+                      "
+                    >
+                      <font face="Impact" color="#000" size="3">
+                        <b><i class="fas fa-bolt"></i> Visual Basic 6.0</b
+                        ><br />
+                        <font size="2"
+                          >The ultimate development environment</font
+                        >
+                      </font>
+                    </td>
+                    <td
+                      class="haunted-skill"
+                      style="
+                        background: #f0932b;
+                        text-align: center;
+                        border: 2px solid #000;
+                      "
+                    >
+                      <font face="Impact" color="#000" size="3">
+                        <b><i class="fas fa-robot"></i> AI Prompt Engineering</b
+                        ><br />
+                        <font size="2">Making robots do my bidding</font>
+                      </font>
+                    </td>
+                    <td
+                      class="haunted-skill"
+                      style="
+                        background: #eb4d4b;
+                        text-align: center;
+                        border: 2px solid #000;
+                      "
+                    >
+                      <font face="Impact" color="#000" size="3">
+                        <b><i class="fas fa-globe"></i> Web 1.0 Mastery</b
+                        ><br />
+                        <font size="2">Why fix what isn't broken?</font>
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Contact section -->
+          <a name="contact"></a>
+          <table
+            width="100%"
+            border="3"
+            cellpadding="15"
+            style="
+              border-color: #00ffff;
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            "
+          >
+            <tr>
+              <td
+                style="
+                  text-align: center;
+                  background: linear-gradient(
+                    90deg,
+                    #ff0000,
+                    #ffff00,
+                    #00ff00,
+                    #00ffff,
+                    #0000ff,
+                    #ff00ff,
+                    #ff0000
+                  );
+                "
+              >
+                <font size="6" face="Nosifer, cursive" color="#000">
+                  <b
+                    ><i class="fas fa-phone"></i> CONTACT THE LEGEND
+                    <i class="fas fa-phone"></i
+                  ></b>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 20px">
+                <center>
+                  <table
+                    border="5"
+                    cellpadding="15"
+                    style="border-color: #ff00ff; background: #000"
+                  >
+                    <tr>
+                      <td>
+                        <form
+                          action="mailto:ajit.chetri@tablemaster.net"
+                          method="post"
+                          enctype="text/plain"
+                        >
+                          <table
+                            border="2"
+                            cellpadding="10"
+                            style="border-color: #00ff00; background: #1a1a1a"
+                          >
+                            <tr>
+                              <td>
+                                <font color="#00ffff" face="Courier New"
+                                  >Your Name:</font
+                                >
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  name="name"
+                                  style="
+                                    background: #000;
+                                    color: #00ff00;
+                                    border: 2px solid #ff00ff;
+                                    font-family: monospace;
+                                  "
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <font color="#ffff00" face="Courier New"
+                                  >Email Address:</font
+                                >
+                              </td>
+                              <td>
+                                <input
+                                  type="email"
+                                  name="email"
+                                  style="
+                                    background: #000;
+                                    color: #ffff00;
+                                    border: 2px solid #00ffff;
+                                    font-family: monospace;
+                                  "
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <font color="#ff00ff" face="Courier New"
+                                  >Message:</font
+                                >
+                              </td>
+                              <td>
+                                <textarea
+                                  name="message"
+                                  rows="5"
+                                  cols="30"
+                                  style="
+                                    background: #000;
+                                    color: #ff00ff;
+                                    border: 2px solid #00ff00;
+                                    font-family: monospace;
+                                  "
+                                >
+Ready to witness table-based miracles?</textarea
+                                >
+                              </td>
+                            </tr>
+                          </table>
+                          <br />
+                          <input
+                            type="submit"
+                            value="LAUNCH MESSAGE"
+                            class="professional-button"
+                          />
+                        </form>
+                      </td>
+                    </tr>
+                  </table>
+                </center>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Footer -->
+          <table
+            width="100%"
+            border="2"
+            cellpadding="10"
+            style="border-color: #ffffff; background: #000; margin-top: 20px"
+          >
+            <tr>
+              <td style="text-align: center">
+                <font face="Impact" color="#ffffff" size="2">
+                  <i class="fas fa-copyright"></i> 2025 Ajit Chetri | Powered by
+                  Pure HTML Excellence | Best viewed in Internet Explorer 6
+                  <br />
+                  <marquee width="60%" direction="left" scrollamount="5">
+                    <font color="#ff0000"
+                      ><i class="fas fa-exclamation-triangle"></i> WARNING: This
+                      website may cause CSS developers to question their life
+                      choices <i class="fas fa-exclamation-triangle"></i
+                    ></font>
+                  </marquee>
+                </font>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Evil floating construction notice -->
+    <table
+      style="
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 9999;
+        animation: bounce 2s infinite;
+      "
+      border="3"
+      cellpadding="5"
+      bgcolor="#ffff00"
+    >
+      <tr>
+        <td>
+          <font face="Impact" color="#ff0000" size="2">
+            <blink
+              ><i class="fas fa-hard-hat"></i> UNDER CONSTRUCTION
+              <i class="fas fa-hard-hat"></i></blink
+            ><br />
+            <font size="1">Since 1995</font>
+          </font>
+        </td>
+      </tr>
+    </table>
+
+    <style>
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+    </style>
+  </body>
+</html>
